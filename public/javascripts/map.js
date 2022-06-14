@@ -6,6 +6,8 @@ mapboxgl.accessToken = mapToken; //so map token can be access with ejs
     zoom: 10// starting zoom
 });
 
+map.addControl(new mapboxgl.NavigationControl())
+
 new mapboxgl.Marker()
     .setLngLat(campground.geometry.coordinates)
     .setPopup(
